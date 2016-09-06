@@ -1,0 +1,88 @@
+body {
+  background-color: #99DB93;
+  font-family: "Consolas", monospace;
+}
+
+#initialcontrols {
+  width: 500px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+#initialcontrols button {
+  background: none;
+  border: none;
+  font-size: 30px;
+  outline: none;
+}
+
+#initialcontrols button:hover {
+  cursor: pointer;
+}
+
+#minusbreak {
+  width: 30px;
+  font-size: 45px;
+}
+
+#pomodorolength {
+  position: absolute;
+  text-align: center;
+}
+
+#breaklength {
+  position: absolute;
+  text-align: center;
+  margin-left: 75%;
+}
+
+#break,
+#timer {
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+#tomato {
+  margin: 0 auto;
+  border: 15px solid #E82323;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 300px;
+  font-size: 40px;
+  overflow: hidden;
+
+  background-color: #E36B71;
+}
+
+#display {
+  background-color: #E36B71;
+  height: 0px;
+  width: 100%;
+
+}
+
+#controls {
+  width: 182px;
+  margin: 25px auto 0;
+
+}
+
+#controls button {
+  background-color: #1F701C;
+  border: none;
+  padding: 7px;
+  font-weight: bold;
+   font-family: inherit;
+  outline: none;
+}
+
+#controls button:hover {
+  background-color: #31782F;
+  cursor: pointer;
+}
