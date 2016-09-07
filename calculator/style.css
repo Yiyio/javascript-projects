@@ -1,0 +1,98 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+body {
+  font-family: 'Pacifico', "sans-serif";
+}
+
+h1 {
+  text-align: center;
+}
+
+#calculatorbody {
+  width: 400px;
+  height: 420px;
+  background-color: grey;
+  margin: 70px auto 0;
+  padding: 1px;
+  border-radius: 2%;
+  box-shadow: 3px -2px 3px lightgray;
+  font-family: 'Audiowide', monospace;
+}
+
+#display {
+  background-color: #EDF5C4;
+  width: 320px;
+  height: 45px;
+  margin: 25px auto 0;
+  border: 1px solid lightgray;
+  font-size: 20px;
+}
+
+#result {
+  float: right;
+}
+
+#tempdisplay {
+  font-size: 12px;
+  float: right;
+  padding-top: 5px;
+  clear: both;
+}
+
+.row {
+  width: 300px;
+  height: 50px;
+  margin: 15px auto 0;
+  display: block;
+  text-align: justify;
+}
+
+.row:after {
+  content: "";
+  width: 100%;
+  display: inline-block;
+}
+
+button {
+  border: 1px solid black;
+  text-align: center;
+  display: inline-block;
+  background color: green;
+  height: 100%;
+  width: 50px;
+  margin: 0 auto;
+  padding: 0px;
+  vertical-align: top;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 3px -2px 3px black;
+  font-family: inherit;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  transform: translate(0px, 3px);
+  box-shadow: none;
+}
+
+.bigbutton {
+  border: 1px solid black;
+  text-align: center;
+  display: inline-block;
+  background color: green;
+  height: 100%;
+  ;
+  width: 130px;
+  margin: 0 auto;
+  padding: 0px;
+  vertical-align: top;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+button.redbutton {
+  background-color: #9E2037;
+}
