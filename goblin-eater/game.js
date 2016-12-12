@@ -28,3 +28,15 @@ monsterImage.onload = function () {
 	monsterReady = true;
 };
 monsterImage.src = "images/monster.png";
+
+//game variables
+var hero = {
+	speed: 256, // in pixels per second
+	x: 0,
+	y: 0
+};
+var monster = {
+	x: 0,
+	y: 0
+};
+var monstersCaught = 0; //by the player i.e. score
