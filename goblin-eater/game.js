@@ -40,3 +40,14 @@ var monster = {
 	y: 0
 };
 var monstersCaught = 0; //by the player i.e. score
+
+//player input
+var keysDown = {};
+
+addEventListener("keydown", function (e) {
+	keysDown[e.keyCode] = true;
+}, false);
+
+addEventListener("keyup", function (e) {
+	delete keysDown[e.keyCode];
+}, false);
