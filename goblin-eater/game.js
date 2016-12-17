@@ -76,7 +76,7 @@ var update = function (modifier) {
 		hero.x += hero.speed * modifier;
 	}
 
-	// Are they touching each other?
+	//are they touching each other?
 	if (
 		hero.x <= (monster.x + 32)
 		&& monster.x <= (hero.x + 32)
@@ -87,3 +87,43 @@ var update = function (modifier) {
 		reset();
 	}
 };
+
+//draw everything!
+var render = function () {
+	if (bgReady) {
+		ctx.drawImage(bgImage, 0, 0);
+	}
+
+	if (heroReady) {
+		ctx.drawImage(heroImage, hero.x, hero.y);
+	}
+
+	if (monsterReady) {
+		ctx.drawImage(monsterImage, monster.x, monster.y);
+	}
+
+	//score
+	ctx.fillStyle = "rgb(250, 250, 250)";
+	ctx.font = "24px Helvetica";
+	ctx.textAlign = "left";
+	ctx.textBaseline = "top";
+	ctx.fillText("Monsterrs caught: " + monstersCaught, 32, 32);
+};
+
+// The main game loop
+var main = function () {
+	var now = Date.now();
+	var delta = now - then;
+
+	update(delta / 1000);
+	render();
+
+	then = now;
+
+	// Request to do this again ASAP
+	requestAnimationFrame(main);
+};
+
+var then = Date.now();
+reset();
+main();
