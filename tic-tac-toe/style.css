@@ -1,0 +1,22 @@
+.board{
+  background-color: blue;
+  width: 500px;
+  height: 400px;
+
+}
+
+.row{
+  clear: left;
+  background-color: red;
+
+
+}
+
+.square{
+  float: left;
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  border-radius: 14%;
+  margin: 10px;
+}
