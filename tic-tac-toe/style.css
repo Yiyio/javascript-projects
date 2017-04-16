@@ -1,8 +1,13 @@
+h1{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 .board{
   background-color: blue;
-  width: 500px;
-  height: 400px;
-
+  width: 360px;
+  height: 360px;
+  margin: 0 auto;
 }
 
 .row{

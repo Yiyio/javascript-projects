@@ -1,3 +1,4 @@
+//var player = prompt("Please enter your name", "Harry Potter");
 var moves = 0;
 var board = [0, 0, 0, 0, 0, 0, 0, 0, 0];
 var wins = [
@@ -45,6 +46,23 @@ var humanTurn = function(){
   document.getElementById(this.getAttribute('id')).innerHTML = 'X';
     moves += 1;
       board[this.getAttribute('id')] = 'X';
+
+      if(checkWinner(board) === 'X'){
+        alert("Congrats, you win!");
+        resetGame();
+      }
+
+      computerTurn();
+
+      if(checkWinner(board) === 'O'){
+        alert("You lost to a very evil computer...")
+        resetGame();
+      }
+      if(moves === 9){
+      alert("It's a trap! I mean...tie")
+      resetGame();
+      }
+
     };
   });
 };
@@ -53,12 +71,12 @@ var humanTurn = function(){
 
 var computerTurn = function() {
     //play some naive AI
-    var AIStrategy = getRandomInt(1,10);
+    var AIStrategy = getRandomInt(1,9);
     console.log(AIStrategy)
     while (document.getElementById(AIStrategy).innerText !== ''){
       //fix when everything is occuppied
       console.log(AIStrategy)
-      AIStrategy = getRandomInt(1,10);
+      AIStrategy = getRandomInt(1,9);
       console.log(AIStrategy)
     }
     document.getElementById(AIStrategy).innerHTML = 'O';
@@ -80,17 +98,24 @@ var computerTurn = function() {
       return a;
     }
   }
+   console.log("no winner yet")
   return false;
+}
+
+var resetGame = function() {
+
+  board = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+
+  moves = 0;
+
+  var numbers = document.getElementsByClassName('square');
+
+  for (var i = 0; i < numbers.length + 1; i++) {
+  numbers[i].innerHTML = '';
+}
 }
 
 
 
-  if(moves === 9){
-    console.log("It's a trap! I mean...tie")
-  }
-
-
 
 humanTurn();
-computerTurn();
-checkWinner(board);
