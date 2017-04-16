@@ -1,6 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Eczar);
+
+body {
+  font-family: 'Eczar', "sans-serif";
+}
+
 h1{
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+h3{
+  margin-bottom: 3px;
 }
 
 .board{
@@ -12,9 +22,6 @@ h1{
 
 .row{
   clear: left;
-  background-color: red;
-
-
 }
 
 .square{
@@ -26,4 +33,29 @@ h1{
   margin: 10px;
   font-size: 30px;
   text-align: center;
+}
+
+#choice{
+  width: 300px;
+  height: 70px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  text-align: center;
+
+}
+
+.choicebox{
+  height: 25px;
+  width: 30px;
+  background-color: blue;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid;
+
+}
+
+.selected{
+  background-color: lightblue;
 }

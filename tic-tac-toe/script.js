@@ -1,4 +1,5 @@
-//var player = prompt("Please enter your name", "Harry Potter");
+var player = 'X'
+var computer = 'O'
 var moves = 0;
 var board = [0, 0, 0, 0, 0, 0, 0, 0, 0];
 var wins = [
@@ -11,6 +12,20 @@ var wins = [
   [0,4,8],
   [2,4,6]
  ];
+
+document.getElementById('X').onclick = function(){
+  player = 'X'
+  computer = 'O'
+  document.getElementById("X").className += " selected";
+}
+
+document.getElementById('O').onclick = function(){
+  player = 'O'
+  computer = 'X'
+  document.getElementById("O").className += " selected";
+
+
+}
 
 ///Create some helper functions
 var getRandomInt = function(min, max) {
@@ -43,18 +58,18 @@ var humanTurn = function(){
   for (var i = 0; i < numbers.length + 1; i++) {
   numbers[i].addEventListener('click', function() {
     if (moves % 2 === 0){
-  document.getElementById(this.getAttribute('id')).innerHTML = 'X';
+  document.getElementById(this.getAttribute('id')).innerHTML = player;
     moves += 1;
-      board[this.getAttribute('id')] = 'X';
+      board[this.getAttribute('id')] = player;
 
-      if(checkWinner(board) === 'X'){
+      if(checkWinner(board) === player){
         alert("Congrats, you win!");
         resetGame();
       }
 
       computerTurn();
 
-      if(checkWinner(board) === 'O'){
+      if(checkWinner(board) === computer){
         alert("You lost to a very evil computer...")
         resetGame();
       }
@@ -79,8 +94,8 @@ var computerTurn = function() {
       AIStrategy = getRandomInt(1,9);
       console.log(AIStrategy)
     }
-    document.getElementById(AIStrategy).innerHTML = 'O';
-   board[AIStrategy] = 'O';
+    document.getElementById(AIStrategy).innerHTML = computer;
+   board[AIStrategy] = computer;
     moves += 1;
   };
 
