@@ -1,0 +1,59 @@
+
+#container{
+  background-color:gray;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto;
+  text-align: center;
+  text-align:justify;
+}
+
+#green{
+  background-color:green;
+  width: 70px;
+  height: 70px;
+  float: left;
+
+}
+
+#red{
+  background-color:red;
+    width: 70px;
+  height: 70px;
+  display: inline-block;
+
+}
+
+#yellow{
+  background-color: yellow;
+  height: 70px;
+  width: 70px;
+  clear: left;
+  float: left;
+
+
+
+}
+
+#blue{
+  background-color: blue;
+    width: 70px;
+  height: 70px;
+  float: left;
+}
+
+#green:active{
+  background-color: lightgreen;
+}
+
+#red:active{
+  background-color: pink;
+}
+
+#yellow:active{
+  background-color: lightyellow;
+}
+
+#blue:active{
+  background-color: lightblue;
+}
