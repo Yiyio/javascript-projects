@@ -1,59 +1,90 @@
+body{
+  background-color: black;
+}
 
-#container{
-  background-color:gray;
-  width: 160px;
-  height: 160px;
+#container {
+  width: 360px;
+  height: 400px;
   margin: 0 auto;
   text-align: center;
-  text-align:justify;
+  text-align: justify;
 }
 
-#green{
-  background-color:green;
-  width: 70px;
-  height: 70px;
+.button{
+  margin: 4px;
+  width: 170px;
+  height: 170px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+#green {
+  background-color: green;
   float: left;
-
 }
 
-#red{
-  background-color:red;
-    width: 70px;
-  height: 70px;
+#red {
+  background-color: red;
   display: inline-block;
-
 }
 
-#yellow{
+#yellow {
   background-color: yellow;
-  height: 70px;
-  width: 70px;
   clear: left;
   float: left;
-
-
-
 }
 
-#blue{
+#blue {
   background-color: blue;
-    width: 70px;
-  height: 70px;
   float: left;
 }
 
-#green:active{
+#green:active {
   background-color: lightgreen;
 }
 
-#red:active{
+#red:active {
   background-color: pink;
 }
 
-#yellow:active{
+#yellow:active {
   background-color: lightyellow;
 }
 
-#blue:active{
+#blue:active {
   background-color: lightblue;
+}
+
+
+#mode:hover {
+  cursor: pointer;
+}
+
+#start:hover {
+  cursor: pointer;
+}
+
+#menu{
+  width: 370px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.box {
+  margin: 0 auto;
+  width: 120px;
+  border: 1px solid white;
+  text-align: center;
+  color: white;
+  margin-top: 5px;
+  float: left;
+}
+
+
+.box:active{
+  background-color: white;
+  color: black;
 }

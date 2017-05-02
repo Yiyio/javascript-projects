@@ -1,20 +1,28 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>Simon says...</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
   <audio preload="auto" id="sound-green"> <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></source></audio>
-<audio preload="auto" id="sound-red"><source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></source></audio>
-<audio preload="auto" id="sound-yellow"><source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></source></audio>
+  <audio preload="auto" id="sound-red"><source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></source></audio>
+  <audio preload="auto" id="sound-yellow"><source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></source></audio>
   <audio preload="auto" id="sound-blue"><source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></source></audio>
 
-  <div id = 'container'>
-  <div class = 'button' id = 'green'> </div>
-  <div class = 'button' id = 'red'> </div>
-  <div class = 'button' id = 'yellow'> </div>
-  <div class = 'button' id = 'blue'> </div>
+  <div id='container'>
+    <div class='button' id='green'> </div>
+    <div class='button' id='red'> </div>
+    <div class='button' id='yellow'> </div>
+    <div class='button' id='blue'> </div>
   </div>
-<div id = 'rounds'>0</div>
+<div id = 'menu'>
+  <div class='box' id='show-rounds'>0</div>
+  <div class='box' id='mode'>Mode: Strict</div>
+  <div class='box' id='start'>Start</div>
+  </div>
 </body>
+
 </html>
